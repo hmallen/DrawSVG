@@ -1,4 +1,4 @@
 *.pyc
 *~
-test.svg
-env/
+*test.svg
+*env/
