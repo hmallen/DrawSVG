@@ -41,7 +41,7 @@ class SVG_Element:
 
         svg_string = indent + '<%s' % (self.type)
 
-        for key, value in self.attributes.iteritems():
+        for key, value in self.attributes.items():
             svg_string += ' %s="%s"' % (key, value)
 
         if not self.children:
@@ -94,9 +94,9 @@ class SVG(SVG_Element):
 
         import os
         if os.path.splitext(filename)[1] == '.svg':
-            f = file(filename, 'w')
+            f = open(filename, 'w')
         else:
-            f = file("%s.svg" % filename, 'w')
+            f = open("%s.svg" % filename, 'w')
 
         f.write(self.output())
 
