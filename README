@@ -1,3 +1,5 @@
+<b>Forked and edited to work with Python 3.</b>
+
 Python module to create SVG files.
 Add to /usr/lib/python2.7/ for easy use.
 
